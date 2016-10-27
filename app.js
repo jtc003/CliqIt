@@ -10,6 +10,12 @@ var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
 var group = require('./routes/group');
+var group1 = require('./routes/group1');
+var group2 = require('./routes/group2');
+var group3 = require('./routes/group3');
+var group4 = require('./routes/group4');
+var group5 = require('./routes/group5');
+var group6 = require('./routes/group6');
 
 var app = express();
 
@@ -36,6 +42,12 @@ if ('development' == app.get('env')) {
 // Add routes here
 app.get('/', index.view);
 app.get('/group', group.view);
+app.get('/group1', group1.view);
+app.get('/group2', group2.view);
+app.get('/group3', group3.view);
+app.get('/group4', group4.view);
+app.get('/group5', group5.view);
+app.get('/group6', group6.view);
 // Example route
 // app.get('/users', user.list);
 
