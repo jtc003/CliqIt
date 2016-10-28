@@ -19,6 +19,7 @@ var group6 = require('./routes/group6');
 var notifications = require('./routes/notifications');
 var addgroup = require('./routes/addgroup');
 var remind = require('./routes/remind');
+var menu = require('./routes/menu');
 
 var app = express();
 
@@ -54,6 +55,7 @@ app.get('/group6', group6.view);
 app.get('/notifications', notifications.view);
 app.get('/addgroup', addgroup.view);
 app.get('/remind', remind.view);
+app.get('/menu', menu.view);
 // Example route
 // app.get('/users', user.list);
 
