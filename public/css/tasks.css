@@ -1,4 +1,4 @@
-.box {
+.box1, .box2, .box3 {
 	border: 2px solid;
 	text-align: center;
 	width: 480px;
@@ -9,7 +9,14 @@
     left: 0;
     right: 0;
     margin: auto;
-	;
+}
+
+.box2 {
+    bottom: -250px;
+}
+
+.box3 {
+    bottom: -800px;
 }
 
 .task-box {
