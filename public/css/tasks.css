@@ -1,4 +1,51 @@
-.col-xs-12 {
+.box {
 	border: 2px solid;
 	text-align: center;
+	width: 480px;
+	height: 230px;
+	position: absolute;
+    top: 0;
+    bottom: 300px;
+    left: 0;
+    right: 0;
+    margin: auto;
+	;
+}
+
+.task-box {
+  position: relative;
+  padding: 1rem;
+  margin: 1rem -1rem;
+  border-width: .2rem 0 0;
+}
+
+
+.task-container {
+  min-width: 30rem;
+  max-width: 40rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.task-header {
+  height: 4rem;
+  margin-bottom: .5rem;
+  border-radius: .25rem;
+  border: 2px solid;
+}
+
+.task-sidebar {
+  float: right;
+  width: 4rem;
+  height: 12rem;
+  border-radius: .25rem;
+  border: 2px solid;
+}
+
+
+.task-body {
+  height: 12rem;
+  margin-right: 4.5rem;
+  border-radius: .25rem;
+  border: 2px solid;
 }
