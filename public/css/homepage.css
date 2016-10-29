@@ -1,4 +1,5 @@
 
+/* for circular groups */
 .col-xs-6 {
 	text-align: center;
     font-size: 15px;
@@ -11,51 +12,7 @@
     margin-right: auto
 }
 
-.container{
+/* to get group containers to be in middle */
+.group-container{
 	width: 500px;
-    padding-top: 70px;
-    padding-bottom: 70px;
-
 }
-
-ul {
-	position: fixed;
-	width: 100%;
-	top 0;
-    margin: 0;
-    padding: 0;
-    background-color: #333;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: #111;
-}
-
-
-
-/*.img-circular{
- width: 200px;
- height: 200px;
- background-image: url('http://strawberry-fest.org/wp-content/uploads/2012/01/Coca-Cola-logo.jpg');
- background-size: cover;
- display: block;
- border-top-left-radius: 100px;
- -webkit-border-top-left-radius: 100px;
- -moz-border-top-left-radius: 100px;
- border-bottom-right-radius: 100px;
- -webkit-border-bottom-right-radius: 100px;
- -moz-border-bottom-right-radius: 100px;
-}*/

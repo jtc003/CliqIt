@@ -1,4 +1,4 @@
-ul {
+/*ul {
 	position: fixed;
 	width: 100%;
 	top 0;
@@ -19,7 +19,7 @@ li a {
     text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
+/* Change the link color to #111 (black) on hover 
 li a:hover {
     background-color: #111;
 }
@@ -31,5 +31,22 @@ li a:hover {
     width: 500px;
     padding-top: 70px;
     padding-bottom: 70px;
+}*/
+
+.navbar-brand {
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+}
+
+
+ /*DEMO example styles for logo image */
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  width: auto;
+  padding: 7px 14px;
 }
 
