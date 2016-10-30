@@ -42,7 +42,7 @@ li a:hover {
 
  /*DEMO example styles for logo image */
 .navbar-brand {
-  padding: 0px;
+  padding: 15px;
 }
 .navbar-brand>img {
   height: 100%;

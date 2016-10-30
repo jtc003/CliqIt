@@ -15,4 +15,6 @@
 /* to get group containers to be in middle */
 .group-container{
 	width: 500px;
+	margin-right: auto;
+	margin-left: auto;
 }
