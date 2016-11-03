@@ -1,2 +1,6 @@
 body{background: #7d7e7d;}
-.container{padding-top:10px; color:#fff;}
+.container{
+	padding-top:10px; 
+	color:#fff;
+	text-align: center;
+}
