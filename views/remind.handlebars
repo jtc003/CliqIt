@@ -9,6 +9,8 @@
     <link href="/css/tasks.css" rel="stylesheet">
     <link href="/css/bd-theme.css" rel="stylesheet">
     <link href="/css/nav.css" rel="stylesheet">
+    <link href="/css/remind.css" rel"stylesheet">
+    <script src="/js/remind.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -17,18 +19,67 @@
     <![endif]-->
   </head>
 <body>
-  <div>
-<nav>
-  <ul>
-    <li><a href="/menu"><span class="glyphicon glyphicon-menu-hamburger"></span></a></li>
-    <li><a href="/" STYLE="text-decoration:none">HOME</a></li>
-    <li style="float:right"><a href="addgroup"><span class="glyphicon glyphicon-plus"></span></a></li>
-    <li style="float:right"><a href="notifications"><span class="glyphicon glyphicon-exclamation-sign"></span></a></li>
-  </ul>
-</nav>
-</div>
-<div class = "container">
-  <h1>Remind</h1>
-</div>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">Remind</a>
+      </div>
+      
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-left">
+          <li><a href="javascript:history.back()"><span class="glyphicon glyphicon-arrow-left"></span></a></li>        
+          <li>
+            <a href="/menu"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+          </li>
+          <li><a href="/">HOME</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/notifications"><span class="glyphicon glyphicon-exclamation-sign"></span></a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+    <!--/.container-fluid -->
+  </nav>
+
+<div class="container">
+   <div class="col-md-offset-5 col-md-5 check-row">
+<form role="form">
+  <div class="form-group">
+ 
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" class="check" id="checkAll"> Select All
+    </label>
+  </div>
+  
+    <div class="checkbox">
+    <label>
+      <input type="checkbox" class="check"> Johnny Chau
+    </label>
+  </div>
+    
+    
+    <div class="checkbox">
+    <label>
+      <input type="checkbox" class="check"> Crystal Jiao
+    </label>
+  </div>
+    
+    <div class="checkbox">
+    <label>
+      <input type="checkbox" class="check"> Edward Li
+    </label>
+  </div>
+</form>
+  </div>
+ </div>
+
 </body> 
 </html>

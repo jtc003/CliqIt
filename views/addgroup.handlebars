@@ -9,6 +9,8 @@
     <link href="/css/tasks.css" rel="stylesheet">
     <link href="/css/bd-theme.css" rel="stylesheet">
     <link href="/css/nav.css" rel="stylesheet">
+    <link href="/css/addTask.css" rel="stylesheet">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -28,7 +30,6 @@
   </nav>
   </div>-->
 
-    <div class="container">
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -38,18 +39,18 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/">CliqIt</a>
+        <a class="navbar-brand" href="/">New Group</a>
       </div>
       
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-left">
-          <li class="active">
+          <li><a href="javascript:history.back()"><span class="glyphicon glyphicon-arrow-left"></span></a></li>        
+          <li>
             <a href="/menu"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
           </li>
           <li><a href="/">HOME</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="/addgroup">Add Group</a></li>
           <li><a href="/notifications"><span class="glyphicon glyphicon-exclamation-sign"></span></a></li>
         </ul>
       </div>
@@ -57,10 +58,30 @@
     </div>
     <!--/.container-fluid -->
   </nav>
-  </div>
 
-  <div class = "container">
-    <h>Add Group</h>
+<div class="container form-container">
+  <form class="form-horizontal">
+  <!-- <fieldset> -->
+    <legend>Create a New Group</legend>
+    <div class="form-group">
+     <!--  <label for="inputEmail" class="col-lg-2 control-label">Email</label> -->
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="inputTask" placeholder="Group Name">
+      </div>
+    </div>
+    <div class="form-group">
+      <label style="text-align:left" for="select" class="col-lg-6 control-label">Add Members</label>
+      <div class="col-lg-10">
+        <select class="form-control" id="select">
+          <option>Johnny</option>
+          <option>Crystal</option>
+          <option>Eddy</option>
+        </select>
+      </div>
+    </div>
+      <input type="reset" id="cancelBtn" class="btn btn-default" value="Cancel"></input>
+      <input type="submit" id="submitBtn" class="btn btn-default" value="Submit"></input>
+  </form>
   </div>
 
 </body> 
