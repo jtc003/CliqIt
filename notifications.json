@@ -1,0 +1,28 @@
+{
+	"tasks": [
+		{
+			"taskName": "Code Notifications page",
+			"groupName": "CliqIt",
+			"priority": "High",
+			"date": "11/3/16"
+		},
+		{
+			"taskName": "Code Reminders page",
+			"groupName": "CliqIt",
+			"priority": "High",
+			"date": "11/3/16"
+		},
+		{
+			"taskName": "Create Logo",
+			"groupName": "CliqIt",
+			"priority": "Medium",
+			"date": "11/2/16"
+		},
+		{
+			"taskName": "Pick color palette",
+			"groupName": "CliqIt",
+			"priority": "Low",
+			"date": "11/6/16"
+		}
+	]
+}
