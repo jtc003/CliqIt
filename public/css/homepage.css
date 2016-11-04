@@ -18,3 +18,9 @@
 	margin-right: auto;
 	margin-left: auto;
 }
+
+@media only screen and (max-width: 767px){
+	.group-container{
+		width: 300px;
+	}
+}
