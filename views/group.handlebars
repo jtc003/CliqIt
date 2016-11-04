@@ -51,7 +51,7 @@
     <div class="box1">
       <div class="task-box">
         <div class="task-container">
-        <div class="task-header">Task 1</div>
+        <div class="task-header">{{taskName}}</div>
         <div class="task-sidebar">
             <a href="/remind"><span class="glyphicon glyphicon-bell"></span></a>
           <p>
@@ -61,15 +61,16 @@
           </p>
         </div>
         <div class="task-body">
-          <p>Due: 10/26/16</p>
-          <p>Priority: High</p>
+          <p>Due: {{date}}</p>
+          <p>Description: {{description}}</p>
+          <p>Priority: {{priority}}</p>
         </div>
         </div>
       </div>
     </div>
 
 
-     <div class="box2">
+     <!-- <div class="box2">
       <div class="task-box">
         <div class="task-container">
         <div class="task-header">Task 2</div>
@@ -107,7 +108,7 @@
         </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>
