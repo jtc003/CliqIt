@@ -11,6 +11,7 @@ var handlebars = require('express3-handlebars')
 var index = require('./routes/index');
 var group = require('./routes/group');
 var addTask = require('./routes/addTask');
+var newTask = require('./routes/newTask')
 var group1 = require('./routes/group1');
 var group2 = require('./routes/group2');
 var group3 = require('./routes/group3');
@@ -50,6 +51,7 @@ if ('development' == app.get('env')) {
 app.get('/', index.view);
 app.get('/group', group.view);
 app.get('/addTask', addTask.view);
+app.get('/newTask', newTask.view);
 app.get('/group1', group1.view);
 app.get('/group2', group2.view);
 app.get('/group3', group3.view);

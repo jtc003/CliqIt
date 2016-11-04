@@ -1,0 +1,53 @@
+{
+	"notifications": [
+		{
+			"taskName": "Code Notifications page",
+			"groupName": "CliqIt",
+			"description" : "Include the details of each reminded task. Add in an alert box to verify that reminders have been sent",
+			"priority": "High",
+			"date": "11/3/16"
+		},
+		{
+			"taskName": "Code Reminders page",
+			"groupName": "CliqIt",
+			"description": "Find a suitable color palette for all of our pages.",
+			"priority": "High",
+			"date": "11/3/16"
+		},
+		{
+			"taskName": "Create Logo",
+			"groupName": "CliqIt",
+			"priority": "Medium",
+			"date": "11/2/16"
+		},
+		{
+			"taskName": "Pick color palette",
+			"groupName": "CliqIt",
+			"description": "Find a suitable color palette for all of our pages.",
+			"priority": "Low",
+			"date": "11/6/16"
+		}
+	],
+
+	"tasks": [
+		{
+			"taskName": "Code Notifications page",
+			"description" : "Include the details of each reminded task. Add in an alert box to verify that reminders have been sent",
+			"priority": "High",
+			"date": "11/3/16"
+		},
+		{
+			"taskName": "Code Reminders page",
+			"description": "Find a suitable color palette for all of our pages.",
+			"priority": "High",
+			"date": "11/3/16"
+		},
+		{
+			"taskName": "Pick color palette",
+			"description": "Find a suitable color palette for all of our pages.",
+			"priority": "Low",
+			"date": "11/6/16"
+		}
+	]
+
+}

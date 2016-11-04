@@ -1,4 +1,33 @@
-.box1, .box2, .box3 {
+#remind{
+  margin-top: 25px;
+
+}
+#options{
+  margin-top: 0px;
+}
+
+.task1{
+  border: 1px solid black;
+  width: 40%;
+  padding: 10px;
+  margin: 5px auto;
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+@media only screen and (max-width: 767px){
+  .task1{
+    width: 300px;
+  }
+}
+
+/*.box1, .box2, .box3 {
 	border: 2px solid;
 	text-align: center;
 	width: 480px;
@@ -59,4 +88,5 @@
 
 .task-body p {
   text-align: left;
-}
+}*/
+
