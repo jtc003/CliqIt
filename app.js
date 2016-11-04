@@ -48,11 +48,11 @@ if ('development' == app.get('env')) {
 }
 
 // Add routes here
-app.get('/', index.view);
-app.get('/group', group.view);
+app.get('/', login.view);
+app.get('/index', index.view);
 app.get('/addTask', addTask.view);
 app.get('/newTask', newTask.view);
-app.get('/group1', group1.view);
+app.get('/group1', group.view);
 app.get('/group2', group2.view);
 app.get('/group3', group3.view);
 app.get('/group4', group4.view);
