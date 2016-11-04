@@ -1,22 +1,28 @@
 {
 	"tasks": [
 		{
-			"taskName" : "Code notifications page",
-			"date" : "11/3/16",
-			"description" : "Include",
-			"priority" : "High"
+			"taskName": "Code Notifications page",
+			"description" : "Include the details of each reminded task. Add in an alert box to verify that reminders have been sent",
+			"priority": "High",
+			"date": "11/3/16"
 		},
 		{
-			"taskName" : "",
-			"date" : "",
-			"description" : "",
-			"priority" : ""
+			"taskName": "Pick color palette",
+			"description": "Find a suitable color palette for all of our pages.",
+			"priority": "Low",
+			"date": "11/6/16"
 		},
 		{
-			"taskName" : "",
-			"date" : "",
-			"description" : "",
-			"priority" : ""
-		},
+			"taskName" : "Create Logo",
+			"date" : "11/5/16",
+			"description" : "Use a design tool to digitally design our logo.",
+			"priority" : "Low"
+		}
 	]
 }
+
+
+
+
+
+			

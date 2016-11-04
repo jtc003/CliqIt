@@ -16,6 +16,7 @@
     <![endif]-->
   <script src="/js/jquery-1.11.0.js"></script>
   <script src="/js/bootstrap.js"></script>
+  <script src="/js/notifications.js"></script>
 </head>
 <body>
   <nav class="navbar navbar-default">
@@ -48,7 +49,7 @@
     <!--/.container-fluid -->
   </nav>
 
-  {{#each tasks}}
+  {{#each notifications}}
   <div class = "container notification-box">
     <div class="row task1">
       <div class="left">
@@ -58,8 +59,8 @@
         <p><strong>Group name: </strong>{{groupName}}</p>
       </div>
       <div class="right">
-        <p><a id ="remind" href="#" class="btn btn-default">Dismiss</a></p>
-        <p><a id="options" href="#" class="btn btn-default">Snooze</a></p>
+        <p><a id ="remind" href="/group1" class="btn btn-default">Dismiss</a></p>
+        <!-- <p><a id="options" href="#" class="btn btn-default">Snooze</a></p> -->
       </div>
     </div>
   </div>
