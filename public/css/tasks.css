@@ -1,10 +1,14 @@
 #remind{
   margin: auto;
   margin-left: 70%;
-
 }
 #options{
   margin-top: 0px;
+}
+
+#checkbox{
+  margin: auto;
+  margin-top: 20%;
 }
 
 .task1{
@@ -16,7 +20,7 @@
 
 .left{
   float: left;
-  width: 100%;
+  width: 80%;
 }
 
 /*.right{
@@ -30,6 +34,19 @@
   .task1{
     width: 300px;
   }
+}
+
+footer{
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+ /* margin: auto;*/
+ padding-top: 15px;
+
+}
+
+footer span{
+  font-size: 2em;
 }
 
 /*.box1, .box2, .box3 {
