@@ -1,5 +1,6 @@
 #remind{
-  margin-top: 25px;
+  margin: auto;
+  margin-left: 70%;
 
 }
 #options{
@@ -15,11 +16,15 @@
 
 .left{
   float: left;
+  width: 100%;
 }
 
-.right{
+/*.right{
   float: right;
-}
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 60%;
+}*/
 
 @media only screen and (max-width: 767px){
   .task1{

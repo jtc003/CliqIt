@@ -9,6 +9,8 @@
     <link href="/css/tasks.css" rel="stylesheet">
     <!-- <link href="/css/bd-theme.css" rel="stylesheet"> -->
     <link href="/css/nav.css" rel="stylesheet">
+    <script src="/js/jquery-1.11.0.js"></script>
+    <script src="/js/collapse.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -51,15 +53,14 @@
   {{#each tasks}}
   <div class = "container notification-box">
     <div class="row task1">
-      <div class="left">
+      <div class="left collapse-group">
         <h4>{{taskName}}</h4>
         <p><strong>Priority:</strong> {{priority}}</p>
         <p><strong>Due Date: </strong> {{date}}</p>
-         <p><strong>Description: </strong>{{description}}</p>
+         <p class="collapse"><strong>Description: </strong>{{description}}</p>
+         <p><a class="btn-detail" href="#">View Details</a></p>
       </div>
-      <div class="right">
-        <p><a id ="remind" href="/remind" class="btn btn-default">Remind</a></p>
-      </div>
+        <a id ="remind" href="/remind" class="btn btn-default">Remind</a>
     </div>
   </div>
   {{/each}}
