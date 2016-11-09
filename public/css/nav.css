@@ -37,6 +37,7 @@ li a:hover {
   transform: translateX(-50%);
   left: 50%;
   position: absolute;
+  top: 2px;
 }
 
 
@@ -53,3 +54,29 @@ li a:hover {
 /*.navbar{
   position: fixed;
 }*/
+/* style this so it is centered on the mobile nav bar*/
+.back-button-m a{
+  display: none !important;
+
+}
+
+.back-button a{
+  display: block;
+}
+
+/* back button to show up on nav bar for mobile view, regular back button to stay hidden */
+@media only screen and (max-width: 767px){
+  .back-button{
+    display:none !important;
+  }
+  .back-button-m{
+    display:block !important;
+    margin-left: 10px;
+    margin-top: 10px;
+    position: absolute;
+  }
+
+  .back-button-m span{
+    font-size: 1.5em;
+  }
+}
