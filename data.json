@@ -1,4 +1,5 @@
 {
+	// reminders that show up on the notifications page
 	"notifications": [
 		{
 			"taskName": "Code Notifications page",
@@ -29,6 +30,7 @@
 		}
 	],
 
+	// tasks that show up on the group pages.
 	"tasks": [
 		{
 			"taskName": "Code Notifications page",
