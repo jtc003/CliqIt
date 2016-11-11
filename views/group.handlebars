@@ -10,7 +10,7 @@
     <!-- <link href="/css/bd-theme.css" rel="stylesheet"> -->
     <link href="/css/nav.css" rel="stylesheet">
     <script src="/js/jquery-1.11.0.js"></script>
-    <script src="/js/collapse.js"></script>
+    <script src="/js/group.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -59,10 +59,16 @@
   <div class = "container notification-box">
     <div class="row task1">
       <div class="left collapse-group">
-        <h4>{{taskName}}</h4>
-        <p><strong>Priority:</strong> {{priority}}</p>
-        <p><strong>Due Date: </strong> {{date}}</p>
-         <p class="collapse"><strong>Description: </strong>{{description}}</p>
+        <h4 id="{{pin}}">{{taskName}}</h4>
+        <p id="priority">
+           <strong>Priority: </strong><span>{{priority}}</span>
+        </p>
+        <p id="date"> 
+          <strong>Due Date: </strong><span>{{date}}</span> 
+        </p>
+        <p id="desc" class="collapse">
+          <strong>Description: </strong><span>{{description}}</span>
+        </p>
          <p><a class="btn-detail" href="#">View Details</a></p>
       </div>
         <label><input id="check" type="checkbox"> Completed</label>

@@ -64,6 +64,8 @@ app.get('/remind', remind.view);
 app.get('/menu', menu.view);
 app.get('/details', details.view);
 app.get('/login', login.view);
+app.post('/group1', group.deleteTask); 
+app.post('/notifications', notifications.removeNotif)
 // Example route
 // app.get('/users', user.list);
 
