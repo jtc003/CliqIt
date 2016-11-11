@@ -14,10 +14,6 @@ var addTask = require('./routes/addTask');
 var create = require('./routes/create')
 var group1 = require('./routes/group1');
 var group2 = require('./routes/group2');
-var group3 = require('./routes/group3');
-var group4 = require('./routes/group4');
-var group5 = require('./routes/group5');
-var group6 = require('./routes/group6');
 var notifications = require('./routes/notifications');
 var addgroup = require('./routes/addgroup');
 var remind = require('./routes/remind');
@@ -51,14 +47,10 @@ if ('development' == app.get('env')) {
 app.get('/', login.view);
 app.get('/index', index.view);
 app.get('/addTask', addTask.view);
+app.get('/newGroup', create.newGroup);
 app.get('/create', create.newTask);
-app.get('/create', create.newGroup);
 app.get('/group1', group.view);
 app.get('/group2', group2.view);
-app.get('/group3', group3.view);
-app.get('/group4', group4.view);
-app.get('/group5', group5.view);
-app.get('/group6', group6.view);
 app.get('/notifications', notifications.view);
 app.get('/addgroup', addgroup.view);
 app.get('/remind', remind.view);

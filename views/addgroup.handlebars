@@ -67,13 +67,13 @@
   </nav>
 
 <div class="container form-container">
-  <form class="form-horizontal">
+  <form class="form-horizontal" role="form" method="get" action="/newGroup">
   <!-- <fieldset> -->
     <legend>Create a New Group</legend>
     <div class="form-group">
      <!--  <label for="inputEmail" class="col-lg-2 control-label">Email</label> -->
       <div class="col-lg-10">
-        <input type="text" class="form-control" id="inputTask" placeholder="Group Name">
+        <input type="text" class="form-control" id="inputTask" placeholder="Group Name" name="groupName">
       </div>
     </div>
     <div class="form-group">
@@ -92,6 +92,9 @@
       <input type="submit" id="submitBtn" class="btn btn-default" value="Submit"></input>
   </form>
   </div>
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
 
 </body> 
 </html>

@@ -30,4 +30,6 @@ exports.newGroup = function(req, res){
 
 	data.groups.push(newGroup);
 	res.render('index', data);
+
+	console.log(groupName);
 }
