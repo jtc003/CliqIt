@@ -1,3 +1,6 @@
+html, body{
+  width: 100%;
+}
 #remind{
   margin: auto;
   margin-left: 35%;
@@ -6,6 +9,9 @@
   margin-top: 0px;
 }
 
+#btn-see-members{
+  margin-right: 100%
+}
 .task1{
   border: 1px solid black;
   width: 40%;
@@ -18,16 +24,18 @@
   width: 80%;
 }
 
-/*.right{
+.right{
   float: right;
-  position: absolute;
-  margin-left: 50%;
-  margin-top: 60%;
-}*/
+  margin-left: 10%;
+}
 
 @media only screen and (max-width: 767px){
   .task1{
     width: 300px;
+  }
+  footer{
+    width: 100%;
+    padding: 15px;
   }
 }
 
@@ -35,15 +43,12 @@ footer{
   position: fixed;
   bottom: 5px;
   right: 5px;
- /* margin: auto;*/
- padding-top: 15px;
-
+  padding-top: 15px;
 }
 
 footer span{
   font-size: 2em;
 }
-
 /*.box1, .box2, .box3 {
 	border: 2px solid;
 	text-align: center;
