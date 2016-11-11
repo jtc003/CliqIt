@@ -5,3 +5,9 @@
 #select{
 	width: 78%;
 }
+
+@media only screen and (max-width: 767px){
+	.form-horizontal{
+		width: 80%;
+	}
+}
