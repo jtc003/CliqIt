@@ -48,6 +48,16 @@
 			"priority": "Low",
 			"date": "11/6/16"
 		}
+	],
+
+	"groups": [
+		{
+			"groupName" : "CSE 170"
+		},
+		{
+			"groupName" : "Squaww"
+		}
 	]
+		
 
 }

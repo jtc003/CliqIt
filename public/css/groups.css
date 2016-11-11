@@ -8,7 +8,7 @@
 	border-radius: 100px;
 	width: 200px;
 	height: 200px;
-    margin: 5px;
+   /* margin: 5px;*/
     margin-right: auto
 }
 
@@ -19,12 +19,27 @@
 	margin-left: auto;
 }
 
+/* fit for mobile */
 @media only screen and (max-width: 767px){
 	.group-container{
-		width: 300px;
+		width: 190px;
+		margin-left: auto;
 	}
+
+	/* puts the two groups on same line 
+	.col-xs-6{
+		width: 105px;
+		height: 105px;
+		padding-top: 35px;
+	}
+
+	 centers the group names 
+	.col-xs-6 > a{
+		margin: auto;
+	} */
 }
 
+/* for the add button */
 footer{
   position: fixed;
   bottom: 5px;
@@ -34,6 +49,7 @@ footer{
 
 }
 
+/* add button size in relation to screen */
 footer span{
   font-size: 2em;
 }
