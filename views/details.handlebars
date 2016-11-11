@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="/css/tasks.css" rel="stylesheet">
-    <link href="/css/bd-theme.css" rel="stylesheet">
-    <link href="/css/nav.css" rel="stylesheet">
     <link href="/css/details.css" rel="stylesheet">
+    <link href="/css/nav.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -18,6 +16,7 @@
     <![endif]-->
   </head>
 <body>
+
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -27,30 +26,33 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand">Details</a>
+        <a class="back-button-m" href="javascript:history.back()"><span class="glyphicon glyphicon-arrow-left"></span></a> 
+        <a class="navbar-brand">Account Info</a>
       </div>
       
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-left">
-          <li><a href="javascript:history.back()"><span class="glyphicon glyphicon-arrow-left"></span></a></li>        
-<!--           <li>
-            <a href="/menu"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
-          </li> -->
-          <li><a href="/index">HOME</a></li>
+          <li class="back-button"><a href="javascript:history.back()"><span class="glyphicon glyphicon-arrow-left"></span></a></li>
+          <li><a href="/index"><span class="glyphicon glyphicon-home"></span> HOME</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="/notifications"><span class="glyphicon glyphicon-exclamation-sign"></span></a></li>
+          <li><a href="/login"><span class="glyphicon glyphicon-off"></span> LOGOUT</a></li>
         </ul>
       </div>
       <!--/.nav-collapse -->
     </div>
     <!--/.container-fluid -->
   </nav>
-<div class = "container">
-  <p><strong>Due Date: </strong> November 4th, 2016</p>
-  <p><strong>Priority: </strong> High</p>
-  <p><strong>Details: </strong>Implement Unique Interactions (Notifications, Send Reminders, Expand Task Details, creating a new task)</p>
 
+
+<div class = "container">
+  <img src="https://scontent-lax3-1.xx.fbcdn.net/t31.0-8/13147369_10153681129222399_278363151251204374_o.jpg" class="img-circle img-responsive center-block" width="150px">
+  <br>
+  <p><strong>Username: </strong> crystaljiao</p>
+  <p><strong>Email: </strong> cjiao@cliqit.com</p>
+  <br>
+  <a href="/index" class="btn btn-default"> Home</a> 
+  <a href="/login" class="btn btn-default"> Logout</a>
 </div>
 
 </body> 

@@ -8,6 +8,7 @@
     <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="/css/tasks.css" rel="stylesheet">
     <link href="/css/bd-theme.css" rel="stylesheet">
+    <link href="/css/details.css" rel="stylesheet">
     <link href="/css/nav.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,17 +18,6 @@
     <![endif]-->
   </head>
 <body>
-  <div>
-<!-- <nav>
-  <ul>
-    <li><a href="/menu"><span class="glyphicon glyphicon-menu-hamburger"></span></a></li>
-    <li><a href="/" STYLE="text-decoration:none">HOME</a></li>
-    <li style="float:right"><a href="addgroup"><span class="glyphicon glyphicon-plus"></span></a></li>
-    <li style="float:right"><a href="notifications"><span class="glyphicon glyphicon-exclamation-sign"></span></a></li>
-  </ul>
-</nav>
-</div>-->
-  <div class="container">
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -37,28 +27,37 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/index">Menu</a>
+
+        <a class="back-button-m" href="javascript:history.back()"><span class="glyphicon glyphicon-arrow-left"></span></a>  
+        <a class="navbar-brand" href="/index">COGS120A Members</a>
       </div>
       
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-left">
-          <li class="active">
-            <a href="/menu"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
-          </li>
-          <li><a href="/index">HOME</a></li>
+          <li><a href="/index"><span class="glyphicon glyphicon-home"></span> HOME</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="/addgroup">Add Group</a></li>
-          <li><a href="/notifications"><span class="glyphicon glyphicon-exclamation-sign"></span></a></li>
+          <li><a href="/details"><span class="glyphicon glyphicon-user"></span> ACCOUNT</a></li>
+          <li><a href="/notifications"><span class="glyphicon glyphicon-exclamation-sign"></span> NOTIFICATIONS</a></li>
+          <li><a href="/login"><span class="glyphicon glyphicon-off"></span> LOGOUT</a></li>
         </ul>
       </div>
       <!--/.nav-collapse -->
     </div>
     <!--/.container-fluid -->
   </nav>
-  </div>
+
+
 <div class = "container">
-  <h1>Menu</h1>
+  <br>
+  <p><span class="glyphicon glyphicon-user"></span><strong> me: </strong>crystaljiao</p>
+
+  <br>
+  <p>JTChau</p>
+  <p>eddyli</p>
+  <br>
+  <a href="/group1" class="btn btn-default"> Back to Group</a> 
 </div>
+
 </body> 
 </html>
