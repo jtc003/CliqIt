@@ -1,0 +1,79 @@
+.container{
+	text-align: center;
+}
+.heading{
+	text-align: center;
+	color: black;
+	font-family: "Geneva";
+}
+
+.heading a{
+	color: gray;
+}
+
+/* for circular groups */
+.col-xs-6 {
+	text-align: center;
+    font-size: 15px;
+	padding-top: 80px;
+	border: 3px solid;
+	border-radius: 100px;
+	width: 200px;
+	height: 200px;
+   /* margin: 5px;*/
+    margin-right: auto
+}
+
+/* to get group containers to be in middle */
+.group-container{
+	width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+/* fit for mobile */
+@media only screen and (max-width: 767px){
+	.group-container{
+		width: 190px;
+		margin-left: auto;
+	}
+
+	.notification{
+    display:block !important;
+    margin-left: 75%;
+    margin-top: 13px;
+    position: absolute;
+  }
+
+  .notification span{
+  	color: gray;
+    font-size: 1.5em;
+  }
+
+	/* puts the two groups on same line 
+	.col-xs-6{
+		width: 105px;
+		height: 105px;
+		padding-top: 35px;
+	}
+
+	 centers the group names 
+	.col-xs-6 > a{
+		margin: auto;
+	} */
+}
+
+/* for the add button */
+/*footer{
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+ padding-top: 15px;
+
+}*/
+
+/* add button size in relation to screen */
+/*footer span{
+  font-size: 2em;
+}*/

@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="/css/bootstrap.min.css" rel="stylesheet">
 		<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="/css/groups.css" rel="stylesheet">
+    <link href="/css/groups2.css" rel="stylesheet">
     <link href="/css/nav.css" rel="stylesheet">
 </head>
 
@@ -24,6 +24,7 @@
           <span class="icon-bar"></span>
         </button>
         <a class="back-button-m" href="javascript:history.back()"><span class="glyphicon glyphicon-arrow-left"></span></a> 
+        <a class="notification" href="/notifications"><span class="glyphicon glyphicon-exclamation-sign"></span></a>
         <a class="navbar-brand" href="/index"><img src="/images/logo.png" alt="Cliqit" class="expand"></a>
       </div>
       
@@ -34,7 +35,7 @@
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="/details"><span class="glyphicon glyphicon-user"></span> ACCOUNT</a></li>
-          <li><a href="/notifications"><span class="glyphicon glyphicon-exclamation-sign"></span> NOTIFICATIONS</a></li>
+<!--           <li><a href="/notifications"><span class="glyphicon glyphicon-exclamation-sign"></span> NOTIFICATIONS</a></li> -->
           <li><a href="/login"><span class="glyphicon glyphicon-off"></span> LOGOUT</a></li>
         </ul>
       </div>
@@ -44,22 +45,24 @@
   </nav>
   <!-- </div> -->
 
+  <div class="container heading">
+    <h4><strong>MY GROUPS</strong></h4>
+    <h5><a href="/addgroup">+ Add Group</a></h5>
+  </div>
+
   {{#each groups}}
   <div class="container group-container">
     <div class="row">
       <div class="col-xs-6">
         <a href="/group1">{{groupName}}</a>
       </div>
-     <!--  <div class="col-xs-6">
-        <a href="/group2">{{groupName2}}</a>
-      </div> -->
     </div>
   </div>
   {{/each}}
 
-  <footer>
+<!--   <footer>
     <a class="btn-add-task" href="/addgroup"><span class="glyphicon glyphicon-plus-sign"></span></a>
-  </footer>
+  </footer> -->
 
 <script src="https://code.jquery.com/jquery.js"></script>
 <script src="/js/bootstrap.min.js"></script>
