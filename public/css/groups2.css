@@ -1,5 +1,6 @@
 .container{
 	text-align: center;
+	padding-bottom: 5px;
 }
 .heading{
 	text-align: center;
@@ -21,9 +22,17 @@
 	width: 200px;
 	height: 200px;
    /* margin: 5px;*/
-    margin-right: auto
+    margin-right: auto;
 }
 
+.dropdown-toggle {
+	color:gray;
+}
+
+.dropdown-menu{
+	position: relative;
+	margin-top: -100px;
+}
 /* to get group containers to be in middle */
 .group-container{
 	width: 500px;
