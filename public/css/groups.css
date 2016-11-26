@@ -12,6 +12,15 @@
     margin-right: auto
 }
 
+.dropdown-toggle {
+	color:gray;
+}
+
+.dropdown-menu{
+	position: relative;
+	margin-top: -100px;
+}
+
 /* to get group containers to be in middle */
 .group-container{
 	width: 500px;
