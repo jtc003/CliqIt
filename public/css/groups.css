@@ -1,4 +1,16 @@
+.container{
+	text-align: center;
+	padding-bottom: 5px;
+}
+.heading{
+	text-align: center;
+	color: black;
+	font-family: "Geneva";
+}
 
+.heading a{
+	color: gray;
+}
 /* for circular groups */
 .col-xs-6 {
 	text-align: center;
@@ -34,6 +46,17 @@
 		width: 190px;
 		margin-left: auto;
 	}
+	.notification{
+    display:block !important;
+    margin-left: 75%;
+    margin-top: 13px;
+    position: absolute;
+  	}
+
+  	.notification span{
+  	color: red;
+    font-size: 1.5em;
+  	}
 
 	/* puts the two groups on same line 
 	.col-xs-6{
