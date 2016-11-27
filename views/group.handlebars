@@ -32,8 +32,8 @@
           <span class="icon-bar"></span>
         </button>
 
-        <a class="back-button-m" href="javascript:history.back()"><span class="glyphicon glyphicon-arrow-left"></span></a>  
-        <a class="navbar-brand" href="/index">{{groupName}}</a>
+        <a class="back-button-m" href="javascript:history.back()"><span class="glyphicon glyphicon-arrow-left"></span></a> 
+        <a class="navbar-brand" href="/index">{{name1.groupName}}</a>
       </div>
       
       <div id="navbar" class="navbar-collapse collapse">
@@ -83,72 +83,9 @@
     <a class="btn-see-members" href="/menu"><span class="glyphicon glyphicon-user"></span></a>
     </div>
     <div class="right">
-    <a class="btn-add-task" href="/addtask"><span class="glyphicon glyphicon-plus-sign"></span></a>
+    <a class="btn-add-task" href="/addtask/{{name1.groupName}}"><span class="glyphicon glyphicon-plus-sign"></span></a>
     </div>
   </footer>
-    
-   <!--  {{#each tasks}}
-    <div class="box1">
-      <div class="task-box">
-        <div class="task-container">
-        <div class="task-header">{{taskName}}</div>
-        <div class="task-sidebar">
-            <a href="/remind"><span class="glyphicon glyphicon-bell"></span></a>
-          <p>
-            <a href="/details">
-              <span class="glyphicon glyphicon-info-sign"></span>
-            </a>
-          </p>
-        </div>
-        <div class="task-body">
-          <p>Due: {{date}}</p>
-          <p>Description: {{description}}</p>
-          <p>Priority: {{priority}}</p>
-        </div>
-        </div>
-      </div>
-    </div>
-    {{/each}} -->
-
-     <!-- <div class="box2">
-      <div class="task-box">
-        <div class="task-container">
-        <div class="task-header">Task 2</div>
-        <div class="task-sidebar">
-            <a href="/remind"><span class="glyphicon glyphicon-bell"></span></a>
-          <p>
-            <a href="/details">
-              <span class="glyphicon glyphicon-info-sign"></span>
-            </a>
-          </p>
-        </div>
-        <div class="task-body">
-          <p>Due: 10/28/16</p>
-          <p>Priority: Medium</p>
-        </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="box3">
-      <div class="task-box">
-        <div class="task-container">
-        <div class="task-header">Task 3</div>
-        <div class="task-sidebar">
-            <a href="/remind"><span class="glyphicon glyphicon-bell"></span></a>
-          <p>
-            <a href="/details">
-              <span class="glyphicon glyphicon-info-sign"></span>
-            </a>
-          </p>
-        </div>
-        <div class="task-body">
-          <p>Due: 10/30/16</p>
-          <p>Priority: Low</p>
-        </div>
-        </div>
-      </div>
-    </div> -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>

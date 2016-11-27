@@ -1,4 +1,7 @@
 {
+	"name" : [{"groupName" : "CSE 170"}],
+	"name1" : {"groupName" : "CSE 170"},
+
 	"notifications": [
 		{
 			"taskName": "Code Notifications page",
@@ -55,6 +58,5 @@
 			"groupName" : "CSE 170"
 		}
 	]
-		
-
 }
+
