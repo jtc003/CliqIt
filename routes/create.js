@@ -1,4 +1,6 @@
 var data = require('../data.json');
+var group1 = require('../group1.json');
+var group2 = require('../group2.json');
 
 exports.newTask = function(req, res){
 	var name = req.query.name;
@@ -13,10 +15,22 @@ exports.newTask = function(req, res){
 		"priority" : priority,
 		"date" : date
 	};
-
-	data.tasks.push(newTask);
-
-	res.render('group', data);
+	if(group1.name1['groupName'] == groupToShow)
+	{
+		group1.tasks.push(newTask);
+		res.render('group', group1);
+	}
+	else if(data.name1['groupName'] == groupToShow)
+	{
+		data.tasks.push(newTask);
+		res.render('group', data);
+	}
+	else
+	{
+		group2.tasks.push(newTask);
+		res.render('group', group2);
+	}
+	
 	//render a different data file with new tasks
 	// but that's going to be reloaded for every group page
 
@@ -57,6 +71,9 @@ exports.deleteGroups = function(req, res){
 	var newGroupList = [];
 
 	//iterate through the current group list
+
+	// for i in data.groups
+
 	data.groups.map(function(obj){
 		if(obj.groupName === req.body.groupName)
 			return;

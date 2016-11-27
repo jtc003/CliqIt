@@ -49,7 +49,7 @@ app.get('/', login.view);
 app.get('/index', index.view);
 app.get('/addTask/:groupName', addTask.view);
 app.get('/newGroup', create.newGroup);
-app.get('/create/', create.newTask);
+app.get('/newTask/:groupName', create.newTask);
 app.get('/group/:groupName', group.view);
 app.get('/group2', group2.view);
 app.get('/notifications', notifications.view);
