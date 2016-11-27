@@ -15,6 +15,7 @@ exports.newTask = function(req, res){
 		"priority" : priority,
 		"date" : date
 	};
+	// checks which data file to render depending on which group it is
 	if(group1.name1['groupName'] == groupToShow)
 	{
 		group1.tasks.push(newTask);

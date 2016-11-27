@@ -20,7 +20,7 @@ var remind = require('./routes/remind');
 var menu = require('./routes/menu');
 var details = require('./routes/details');
 var login = require('./routes/login');
-var index2 = require('./routes/index2');
+
 
 var app = express();
 
@@ -46,6 +46,7 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', login.view);
+// registers the control condition
 app.get('/index', index.view);
 app.get('/addTask/:groupName', addTask.view);
 app.get('/newGroup', create.newGroup);
@@ -58,7 +59,8 @@ app.get('/remind', remind.view);
 app.get('/menu', menu.view);
 app.get('/details', details.view);
 app.get('/login', login.view);
-app.get('/index2', index2.view);
+// registers the experimental condition
+app.get('/index2', index.view2);
 app.post('/group1', create.deleteTask); 
 app.post('/deleteGroups', create.deleteGroups);
 app.post('/notifications', notifications.removeNotif)
