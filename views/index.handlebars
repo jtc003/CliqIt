@@ -9,6 +9,8 @@
 		<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="/css/groups.css" rel="stylesheet">
     <link href="/css/nav.css" rel="stylesheet">
+    <script src="/js/jquery-1.11.0.js"></script>
+    <script src="/js/groups.js"></script>
 </head>
 
 <body>	
@@ -79,11 +81,11 @@
   <div class="container group-container">
     <div class="row">
       <div class="col-xs-6">
-        <a href="/group/{{groupName}}">{{groupName}}</a>
+        <a id="group-name" href="/group/{{groupName}}">{{groupName}}</a>
         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-option-vertical"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Rename Group</a></li>
-          <li><a href="#">Delete Group</a></li>
+          <!-- <li><a href="#">Rename Group</a></li>
+ -->          <li><a href="#">Delete Group</a></li>
         </ul>
       </div>
     </div>

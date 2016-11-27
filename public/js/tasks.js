@@ -26,5 +26,5 @@ $(document).ready(function(){
 
 	//hide completed tasks
 	$('label').on('click', deleteFunc);	
-
+	
 })

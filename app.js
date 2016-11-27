@@ -60,6 +60,7 @@ app.get('/details', details.view);
 app.get('/login', login.view);
 app.get('/index2', index2.view);
 app.post('/group1', create.deleteTask); 
+app.post('/deleteGroups', create.deleteGroups);
 app.post('/notifications', notifications.removeNotif)
 // Example route
 // app.get('/users', user.list);

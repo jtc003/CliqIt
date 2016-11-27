@@ -52,3 +52,24 @@ exports.deleteTask = function(req, res){
 
 	data.tasks = newTaskList;
 }
+
+exports.deleteGroups = function(req, res){
+	var newGroupList = [];
+
+	//iterate through the current group list
+	data.groups.map(function(obj){
+		if(obj.groupName === req.body.groupName)
+			return;
+
+		// push any group object that doesnt match the one to be deleted
+		// into the new list of groups
+		newGroupList.push(obj);
+	});
+
+	data.groups = newGroupList;
+}
+
+
+
+
+
