@@ -26,7 +26,7 @@
           <span class="icon-bar"></span>
         </button>
         <a class="back-button-m" href="javascript:history.back()"><span class="glyphicon glyphicon-arrow-left"></span></a> 
-        <a class="notification" href="/notifications"><span class="glyphicon glyphicon-exclamation-sign"></span></a>
+        <a class="notification" onclick= ga('send', 'event', 'notification', 'click') href="/notifications"><span class="glyphicon glyphicon-exclamation-sign"></span></a>
         <a class="navbar-brand" href="/index"><img src="/images/logo.png" alt="Cliqit" class="expand"></a>
       </div>
       
@@ -82,6 +82,7 @@
 
   ga('create', 'UA-87923824-1', 'auto');
   ga('send', 'pageview');
+
 
 </script>
 </body>
