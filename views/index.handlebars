@@ -89,7 +89,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 {{#if showAlternate}}
     <div class="container heading">
       <h4><strong>MY GROUPS</strong></h4>
-      <h5><a href="/addgroup">+ Add Group</a></h5>
+      <h5><a href="/addgroup" onclick= "ga('send', 'event', 'addgroup2', 'click');">+ Add Group</a></h5>
     </div>
 {{/if}}
 
@@ -110,7 +110,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 
 {{#unless showAlternate}}
   <footer>
-    <a class="btn-add-task" href="/addgroup"><span class="glyphicon glyphicon-plus-sign"></span></a>
+    <a class="btn-add-task" href="/addgroup" onclick= "ga('send', 'event', 'addgroup', 'click');"><span class="glyphicon glyphicon-plus-sign"></span></a>
   </footer>
 {{/unless}}
 
