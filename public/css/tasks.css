@@ -39,6 +39,18 @@ html, body{
     width: 100%;
     padding: 15px;
   }
+
+  /* for the members button in the nav bar */
+  .btn-see-members{
+    display:block !important;
+    margin-left: 15%;
+    margin-top: 13px;
+    position: absolute;
+  }
+
+  .btn-see-members span{
+    font-size: 1.5em;
+  }
 }
 
 footer{
@@ -52,66 +64,14 @@ footer{
 footer span{
   font-size: 2em;
 }
-/*.box1, .box2, .box3 {
-	border: 2px solid;
-	text-align: center;
-	width: 480px;
-	height: 230px;
-	position: absolute;
-    top: 0;
-    bottom: 300px;
-    left: 0;
-    right: 0;
-    margin: auto;
+
+.heading{
+  text-align: center;
+  color: black;
+  font-family: "Geneva";
 }
 
-.box2 {
-    bottom: -250px;
+.heading a{
+  color: gray;
 }
-
-.box3 {
-    bottom: -800px;
-}
-
-.task-box {
-  position: relative;
-  padding: 1rem;
-  margin: 1rem -1rem;
-  border-width: .2rem 0 0;
-}
-
-
-.task-container {
-  min-width: 30rem;
-  max-width: 40rem;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.task-header {
-  height: 4rem;
-  margin-bottom: .5rem;
-  border-radius: .25rem;
-  border: 2px solid;
-}
-
-.task-sidebar {
-  float: right;
-  width: 4rem;
-  height: 12rem;
-  border-radius: .25rem;
-  border: 2px solid;
-}
-
-
-.task-body {
-  height: 12rem;
-  margin-right: 4.5rem;
-  border-radius: .25rem;
-  border: 2px solid;
-}
-
-.task-body p {
-  text-align: left;
-}*/
 

@@ -9,6 +9,7 @@
     <link href="/css/tasks.css" rel="stylesheet">
     <!-- <link href="/css/bd-theme.css" rel="stylesheet"> -->
     <link href="/css/nav.css" rel="stylesheet">
+    <link href="/css/tasks.css" rel="stylesheet">
     <script src="/js/jquery-1.11.0.js"></script>
     <script src="/js/tasks.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -33,6 +34,7 @@
         </button>
 
         <a class="back-button-m" href="javascript:history.back()"><span class="glyphicon glyphicon-arrow-left"></span></a> 
+        <a class="btn-see-members" href="/menu"><span class="glyphicon glyphicon-user"></span></a>
         <a class="navbar-brand" href="/index">{{name1.groupName}}</a>
       </div>
       
@@ -55,6 +57,10 @@
     <!--/.container-fluid -->
   </nav>
   
+  <div class="container heading">
+    <h4><strong>Tasks</strong></h4>
+    <h5><a href="/addtask/{{name1.groupName}}">+ Add Task</a></h5>
+  </div>
 
   {{#each tasks}}
   <div class = "container notification-box">
@@ -78,14 +84,14 @@
   </div>
   {{/each}}
 
-  <footer>
+  <!-- <footer>
     <div class="left">
     <a class="btn-see-members" href="/menu"><span class="glyphicon glyphicon-user"></span></a>
     </div>
     <div class="right">
     <a class="btn-add-task" href="/addtask/{{name1.groupName}}"><span class="glyphicon glyphicon-plus-sign"></span></a>
     </div>
-  </footer>
+  </footer> -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>
