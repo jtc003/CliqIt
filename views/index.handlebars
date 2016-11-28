@@ -2,56 +2,18 @@
 <html>
 
 <head>
-  <!-- Google Analytics Content Experiment code -->
-<script>function utmx_section(){}function utmx(){}(function(){var
-k='134458745-0',d=document,l=d.location,c=d.cookie;
-if(l.search.indexOf('utm_expid='+k)>0)return;
-function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
-indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
-length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
-'<sc'+'ript src="'+'http'+(l.protocol=='https:'?'s://ssl':
-'://www')+'.google-analytics.com/ga_exp.js?'+'utmxkey='+k+
-'&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
-valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
-'" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
-</script><script>utmx('url','A/B');</script>
-<!-- End of Google Analytics Content Experiment code -->
-
 		<title>CliqIt Homepage</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="/css/bootstrap.min.css" rel="stylesheet">
 		<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="/css/groups.css" rel="stylesheet">
+    <link href="/css/groups2.css" rel="stylesheet">
     <link href="/css/nav.css" rel="stylesheet">
     <script src="/js/jquery-1.11.0.js"></script>
     <script src="/js/groups.js"></script>
 </head>
 
 <body>	
-
-<!--
-<div>
-<nav>
-  <ul>
-    <li><a href="/menu"><span class="glyphicon glyphicon-menu-hamburger"></span></a></li>
-    <li><a href="/" STYLE="text-decoration:none">HOME</a></li>
-    <li style="float:right"><a href="addgroup"><span class="glyphicon glyphicon-plus"></span></a></li>
-    <li style="float:right"><a href="notifications"><span class="glyphicon glyphicon-exclamation-sign"></span></a></li>
-  </ul>
-</nav>
-</div>
--->
-
-<!--<nav>
-  <ul>
-    <li><a href="#Menu"><span class="glyphicon glyphicon-menu-hamburger"></span></a></li>
-    <li><a href="#Purpose">About</a></li>
-  <ul>
-    <li><a href="#HowTo" >Guide</a></li>
-    <li><a href="#Price" >Pricing</a></li>
-  </ul>
-</nav>-->
 
   <!-- <div class="container" style=""> -->
   <nav class="navbar navbar-default">
@@ -63,21 +25,19 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        {{#if showAlternate}}
-          <a class="back-button-m" href="javascript:history.back()"><span class="glyphicon glyphicon-arrow-left"></span></a> 
-          <a class="notification" href="/notifications" onclick= "ga('send', 'event', 'notification', 'click');"><span class="glyphicon glyphicon-exclamation-sign"></span></a>
-        {{/if}}
-          <a class="back-button-m" href="javascript:history.back()"><span class="glyphicon glyphicon-arrow-left"></span></a> 
-          <a class="navbar-brand" href="/index"><img src="/images/logo.png" alt="Cliqit" class="expand"></a>
+        <a class="back-button-m" href="javascript:history.back()"><span class="glyphicon glyphicon-arrow-left"></span></a> 
+        <a class="notification" onclick= "ga('send', 'event', 'notification', 'click');" href="/notifications"><span class="glyphicon glyphicon-exclamation-sign"></span></a>
+        <a class="navbar-brand" href="/index"><img src="/images/logo.png" alt="Cliqit" class="expand"></a>
       </div>
+      
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-left">
           <li class="back-button"><a href="javascript:history.back()"><span class="glyphicon glyphicon-arrow-left"></span></a></li>  
-          <li><a href="/index"><span class="glyphicon glyphicon-home"></span> HOME</a></li>
+          <li><a href="/index2"><span class="glyphicon glyphicon-home"></span> HOME</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="/details"><span class="glyphicon glyphicon-user"></span> ACCOUNT</a></li>
-          <li><a href="/notifications" onclick= "ga('send', 'event', 'notifmenu', 'click');"><span class="glyphicon glyphicon-exclamation-sign"></span> NOTIFICATIONS</a></li>
+<!--           <li><a href="/notifications"><span class="glyphicon glyphicon-exclamation-sign"></span> NOTIFICATIONS</a></li> -->
           <li><a href="/login"><span class="glyphicon glyphicon-off"></span> LOGOUT</a></li>
         </ul>
       </div>
@@ -86,33 +46,31 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
     <!--/.container-fluid -->
   </nav>
   <!-- </div> -->
-{{#if showAlternate}}
-    <div class="container heading">
-      <h4><strong>MY GROUPS</strong></h4>
-      <h5><a href="/addgroup" onclick= "ga('send', 'event', 'addgroup2', 'click');">+ Add Group</a></h5>
-    </div>
-{{/if}}
+
+  <div class="container heading">
+    <h4><strong>My Groups</strong></h4>
+    <h5><a href="/addgroup" onclick= "ga('send', 'event', 'addgroup2', 'click');">+ Add Group</a></h5>
+  </div>
 
   {{#each groups}}
   <div class="container group-container">
     <div class="row">
       <div class="col-xs-6">
         <a id="group-name" href="/group/{{groupName}}">{{groupName}}</a>
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-option-vertical"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-option-vertical"></span></a>
         <ul class="dropdown-menu">
-          <!-- <li><a href="#">Rename Group</a></li>
- -->          <li><a href="#">Delete Group</a></li>
+          <!-- <li><a href="#">Rename Group</a></li> -->
+          <li><a href="#">Delete Group</a></li>
         </ul>
+      </div>
       </div>
     </div>
   </div>
   {{/each}}
 
-{{#unless showAlternate}}
-  <footer>
-    <a class="btn-add-task" href="/addgroup" onclick= "ga('send', 'event', 'addgroup', 'click');"><span class="glyphicon glyphicon-plus-sign"></span></a>
-  </footer>
-{{/unless}}
+<!--   <footer>
+    <a class="btn-add-task" href="/addgroup"><span class="glyphicon glyphicon-plus-sign"></span></a>
+  </footer> -->
 
 <script src="https://code.jquery.com/jquery.js"></script>
 <script src="/js/bootstrap.min.js"></script>
@@ -124,6 +82,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 
   ga('create', 'UA-87923824-1', 'auto');
   ga('send', 'pageview');
+
 
 </script>
 </body>

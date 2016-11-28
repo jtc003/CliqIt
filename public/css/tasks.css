@@ -86,9 +86,17 @@ input[type=radio].css-checkbox {
     width: 300px;
     padding-top: 15px;
   }
-  footer{
-    width: 100%;
-    padding: 15px;
+
+  .notification{
+    display:block !important;
+    margin-left: 75%;
+    margin-top: 13px;
+    position: absolute;
+  }
+
+  .notification span{
+    color: #FF392E;
+    font-size: 1.5em;
   }
 
   /* for the members button in the nav bar */

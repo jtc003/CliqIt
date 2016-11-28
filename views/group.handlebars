@@ -35,6 +35,7 @@
 
         <a class="back-button-m" href="javascript:history.back()"><span class="glyphicon glyphicon-arrow-left"></span></a> 
         <a class="btn-see-members" href="/menu"><span class="glyphicon glyphicon-user"></span></a>
+        <a class="notification" onclick= "ga('send', 'event', 'notification', 'click');" href="/notifications"><span class="glyphicon glyphicon-exclamation-sign"></span></a>
         <a class="navbar-brand" href="/index">{{name1.groupName}}</a>
       </div>
       
@@ -48,7 +49,6 @@
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="/details"><span class="glyphicon glyphicon-user"></span> ACCOUNT</a></li>
-          <li><a href="/notifications"><span class="glyphicon glyphicon-exclamation-sign"></span> NOTIFICATIONS</a></li>
           <li><a href="/login"><span class="glyphicon glyphicon-off"></span> LOGOUT</a></li>
         </ul>
       </div>
