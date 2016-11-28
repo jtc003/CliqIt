@@ -19,27 +19,19 @@ exports.newTask = function(req, res){
 	if(group1.name1['groupName'] == groupToShow)
 	{
 		group1.tasks.push(newTask);
-		// $(location).attr('href', 'http://stackoverflow.com')
-		// res.render('group', group1);
 	}
 	else if(data.name1['groupName'] == groupToShow)
 	{
 		data.tasks.push(newTask);
-		// res.render('group', data);
 	}
 	else
 	{
 		group2.tasks.push(newTask);
-		// res.render('group', group2);
 	}
-
-	var rootUrl = "cliqit.heroku.com/group/";
-	var url = rootUrl + groupToShow;
-	window.location = url;
 	
-	//render a different data file with new tasks
-	// but that's going to be reloaded for every group page
-
+	var rootUrl = "/group/";
+	var url = rootUrl + groupToShow;
+	res.redirect(url);
 }
 
 exports.newGroup = function(req, res){
@@ -53,7 +45,9 @@ exports.newGroup = function(req, res){
 	};
 
 	data.groups.push(newGroup);
-	res.render('index', data);
+
+	var url = "/index/";
+	res.redirect(url);
 }
 
 exports.deleteTask = function(req, res){
