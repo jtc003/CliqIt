@@ -14,7 +14,7 @@ html, body{
   margin-right: 100%
 }
 .task1{
-  border: 1px solid black;
+  border: 1px solid gray;
   width: 40%;
   padding: 10px;
   margin: 5px auto;
@@ -29,6 +29,57 @@ html, body{
   float: right;
   margin-left: 10%;
 }
+
+.btn-default {
+  color: #85BDBF !important;
+  background-image: none !important;
+}
+
+a {
+  color: #85BDBF;
+}
+
+h4 {
+  color: #85BDBF !important;
+}
+
+p {
+  color: gray !important;
+}
+
+label {
+  color: gray;
+}
+
+input[type=radio].css-checkbox {
+              position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+            }
+
+            input[type=radio].css-checkbox + label.css-label {
+              padding-left:23px;
+              height:21px; 
+              display:inline-block;
+              line-height:21px;
+              background-repeat:no-repeat;
+              background-position: 0 0;
+              font-size:15px;
+              vertical-align:middle;
+              cursor:pointer;
+
+            }
+
+            input[type=radio].css-checkbox:checked + label.css-label {
+              background-position: 0 -21px;
+            }
+            label.css-label {
+        background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_5ab92245cf78caac21ff087cfc374219.png);
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
 
 @media only screen and (max-width: 767px){
   .task1{
@@ -67,7 +118,7 @@ footer span{
 
 .heading{
   text-align: center;
-  color: black;
+  color: #85BFBD;
   font-family: "Geneva";
 }
 

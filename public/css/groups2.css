@@ -4,7 +4,7 @@
 }
 .heading{
 	text-align: center;
-	color: black;
+	color: #85BDBF;
 	font-family: "Geneva";
 }
 
@@ -19,19 +19,27 @@
 	padding-top: 80px;
 	border: 3px solid;
 	border-radius: 100px;
+	border-color: gray;
 	width: 200px;
 	height: 200px;
    /* margin: 5px;*/
     margin-right: auto;
 }
 
+.col-xs-6 a {
+	color: #85BDBF;
+}
+
 .dropdown-toggle {
 	color:gray;
 }
 
+
 .dropdown-menu{
 	position: relative;
 	margin-top: -100px;
+	text-align: center;
+	font-color: #85BDBF !important;
 }
 /* to get group containers to be in middle */
 .group-container{
@@ -56,7 +64,7 @@
   }
 
   .notification span{
-  	color: red;
+  	color: #FF392E;
     font-size: 1.5em;
   }
 

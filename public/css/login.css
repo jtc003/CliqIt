@@ -3,3 +3,12 @@
 	margin: 5px auto;
 	margin-left: 5%;
 }
+
+.btn-default {
+	color: #85BDBF !important;
+	background-image: none !important;
+}
+
+legend {
+	color: #85BDBF !important;
+}
