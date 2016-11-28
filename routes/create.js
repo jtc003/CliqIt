@@ -29,6 +29,7 @@ exports.newTask = function(req, res){
 		group2.tasks.push(newTask);
 	}
 	
+	// redirect to avoid duplicates on page reload
 	var rootUrl = "/group/";
 	var url = rootUrl + groupToShow;
 	res.redirect(url);
@@ -46,6 +47,7 @@ exports.newGroup = function(req, res){
 
 	data.groups.push(newGroup);
 
+	// redirect to avoid duplicates on page reload
 	var url = "/index/";
 	res.redirect(url);
 }
