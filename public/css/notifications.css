@@ -7,7 +7,7 @@
 }
 
 .task1{
-	border: 1px dashed black;
+	border: 1px dashed gray;
 	width: 40%;
 	padding: 10px;
 	margin: 5px auto;
@@ -20,6 +20,28 @@
 .right{
 	float: right;
 }
+
+.btn-default {
+	color: #85BDBF !important;
+	background-image: none !important;
+}
+
+a {
+  color: #85BDBF;
+}
+
+h4 {
+  color: #85BDBF !important;
+}
+
+p {
+  color: gray !important;
+}
+
+label {
+  color: gray;
+}
+
 
 @media only screen and (max-width: 767px){
 	.task1{
